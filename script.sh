@@ -9,7 +9,8 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/p
 # Agregar "zsh-autosuggestions" al archivo ~/.zshrc
 echo 'plugins=(git zsh-autosuggestions)' >> ~/.zshrc
 
-# Aplicar los cambios
-source ~/.zshrc
+# Cambiar la shell predeterminada a Zsh
+chsh -s $(which zsh)
 
-echo "Oh My Zsh y Zsh Autosuggestions se han instalado y configurado correctamente."
+echo "Oh My Zsh y Zsh Autosuggestions se han instalado y configurado correctamente, y Zsh se ha establecido como la shell predeterminada."
+
